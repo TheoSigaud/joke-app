@@ -1,0 +1,14 @@
+nam: Test Workflow
+
+on:
+  push:
+
+jobs:
+  echo-test:
+
+  steps:
+    - name: Echo test
+      run: 
+        export NAME=Theo
+        echo the $NAME
+      

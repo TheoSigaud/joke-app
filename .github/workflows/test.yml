@@ -1,4 +1,4 @@
-nam: Test Workflow
+name: Test Workflow
 
 on:
   push:
@@ -11,4 +11,3 @@ jobs:
       run: 
         export NAME=Theo
         echo the $NAME
-      

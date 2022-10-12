@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo Building'
-                sh 'npm run build'
-                sh 'open test'
+                nodejs(nodeJSInstallationName: 'Node js') {
+                    sh 'echo Building'
+                    sh 'npm run build'
+                    sh 'open test'
+                }
             }
         }
     }
